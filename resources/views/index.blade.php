@@ -16,10 +16,17 @@
 </head>
 
 <body>
+    <div class="bg-primary text-white d-flex justify-content-center w-100">
+        <h1>BENVENUTO! SCEGLI QUELLO CHE DESIDERI FARE</h1>
+    </div>
 
-    <div class="container">
-        <a href="/create">Inserisci</a><br>
-        <a href="/show">Visualizza</a>
+    <div class="container d-flex justify-content-center gap-5 mt-3">
+        <a class="text-decoration-none" href="/create">Inserisci un nuovo fumetto</a><br>
+        <a class="text-decoration-none" href="/show">Visualizza la lista dei fumetti</a>
+    </div>
+
+    <div class="mt-5 d-flex justify-content-center w-100">
+        <img width="1300" height="700" src="https://www.geekjournal.it/wp-content/uploads/gatti-wars.jpg" alt="">
     </div>
 
 </body>

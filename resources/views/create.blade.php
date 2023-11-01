@@ -17,8 +17,12 @@
 
 <body>
 
+
+
+
     <div class="container d-flex flex-column mt-5">
-        <form class="form-control" action="{{ route('comic.store')}}" method="POST">
+        <h1 class="text-primary">INSERISCI UN NUOVO FUMETTO</h1>
+        <form class="form-control mb-5" action="{{ route('comic.store')}}" method="POST">
         @csrf
     
             <label for="title">Titolo</label>
@@ -48,7 +52,7 @@
             <label for="writers">Autori</label>
             <input type="text" name="writers[]" id="writers" cols="30" rows="10"></input>
     
-            <input type="submit" value="invia">
+            <input class="btn btn-primary rounded-pill mt-3" type="submit" value="invia">
     
         </form>
     </div>
