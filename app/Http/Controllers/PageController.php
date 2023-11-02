@@ -21,4 +21,8 @@ class PageController extends Controller
     {
         return view('show', ['comics'=>Comic::all()]);
     }
+    public function edit()
+    {
+        return view('edit');
+    }
 }
