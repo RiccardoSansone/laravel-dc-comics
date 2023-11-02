@@ -23,6 +23,6 @@ class PageController extends Controller
     }
     public function edit()
     {
-        return view('edit');
+        return view('edit', ['comics'=>Comic::all()]);
     }
 }

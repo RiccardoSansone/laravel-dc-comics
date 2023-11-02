@@ -19,37 +19,37 @@
 
     <div class="container mt-5">
 
-        <form class="form-control" action="{{ route('comic.update', ['id' => $comic->id])}}" method="POST">
+        <form class="form-control" action="{{ route('comic.update', ['id' => $comics->id])}}" method="POST">
             @csrf
             @method('PUT')
 
             
             <label for="title">Titolo</label>
-            <input type="text" name="title" id="title" value="{{$comic->title}}">
+            <input type="text" name="title" id="title" value="{{$comics->title}}">
     
             <label for="description">Descrizione</label>
-            <input type="text" name="description" id="description" value="{{$comic->description}}>
+            <input type="text" name="description" id="description" value="{{$comics->description}}>
     
             <label for="thumb">Copertina</label>
-            <input type="text" name="thumb" id="thumb"value="{{$comic->thumb}}>
+            <input type="text" name="thumb" id="thumb"value="{{$comics->thumb}}>
     
             <label for="price">Prezzo</label>
-            <input type="text" name="price" id="price" value="{{$comic->price}}>
+            <input type="text" name="price" id="price" value="{{$comics->price}}>
     
             <label for="series">Serie</label>
-            <input type="text" name="series" id="series" value="{{$comic->series}}>
+            <input type="text" name="series" id="series" value="{{$comics->series}}>
     
             <label for="sale_date">Data d'uscita</label>
-            <input type="date" name="sale_date" id="sale_date" value="{{$comic->sale_date}}>
+            <input type="date" name="sale_date" id="sale_date" value="{{$comics->sale_date}}>
     
             <label for="type">Tipologia</label>
-            <input type="text" name="type" id="type" value="{{$comic->type}}>
+            <input type="text" name="type" id="type" value="{{$comics->type}}>
 
             <label for="artists">Artisti</label>
-            <input type="text" name="artists[]" id="artists" cols="30" rows="10" value="{{$comic->artists}}></input>
+            <input type="text" name="artists[]" id="artists" cols="30" rows="10" value="{{$comics->artists}}></input>
 
             <label for="writers">Autori</label>
-            <input type="text" name="writers[]" id="writers" cols="30" rows="10" value="{{$comic->writers}}></input>
+            <input type="text" name="writers[]" id="writers" cols="30" rows="10" value="{{$comics->writers}}></input>
     
             <input class="btn btn-primary rounded-pill mt-3" type="submit" value="invia">
 
